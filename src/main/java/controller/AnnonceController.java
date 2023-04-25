@@ -25,7 +25,7 @@ public class AnnonceController {
         this.annonceService = annonceService;
     }
 
-    @GetMapping("/annonces")
+    @GetMapping("/tous-annonces")
     public List<Annonce> getAllUserAnnonces(){
         return this.annonceService.getAllAnnonces();
     }
