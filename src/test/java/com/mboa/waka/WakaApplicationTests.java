@@ -6,7 +6,6 @@ import static org.mockito.ArgumentMatchers.notNull;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import modele.Annonce;
 import persitence.AnnonceRepository;
 import persitence.CategorieRepository;
 import persitence.MessageRepo;

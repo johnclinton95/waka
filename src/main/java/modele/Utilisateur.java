@@ -2,7 +2,6 @@ package modele;
 
 import java.util.List;
 
-import jakarta.annotation.Generated;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
