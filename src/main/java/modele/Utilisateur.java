@@ -2,12 +2,35 @@ package modele;
 
 import java.util.List;
 
+import jakarta.annotation.Generated;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.OneToOne;
+
+@Entity
 public class Utilisateur {
+
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+@OneToOne(fetch = FetchType.LAZY)
 private int id;
+
+@Column(nullable = false)
 private String nom;
+
+@Column(nullable = false)
 private String prenom;
+
+@Column(nullable = false)
 private String email;
+
+@Column(nullable = false)
 private String motDePasse;
+
 private List<Annonce> annonces;
 
 public Utilisateur() {}
