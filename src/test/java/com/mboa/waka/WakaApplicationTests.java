@@ -3,7 +3,7 @@ package com.mboa.waka;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.notNull;
 
-import org.junit.jupiter.api.Test;
+
 import org.springframework.boot.test.context.SpringBootTest;
 
 import persitence.AnnonceRepository;
@@ -14,6 +14,12 @@ import service.AnnonceService;
 import service.CategorieService;
 import service.MessageService;
 import service.UtilisateurService;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.springframework.test.context.junit4.SpringRunner;
+
+@RunWith(SpringRunner.class)
 
 @SpringBootTest
 class WakaApplicationTests {
