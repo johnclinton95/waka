@@ -3,8 +3,6 @@ package com.mboa.waka;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.ArgumentMatchers.notNull;
 
-
-
 import persitence.AnnonceRepository;
 import persitence.CategorieRepository;
 import persitence.MessageRepo;
@@ -21,10 +19,10 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 
 @SpringBootTest
-class WakaApplicationTests {
+public class WakaApplicationTests {
 
 	@Test
-	void contextLoads() {
+	public void contextLoads() {
 		 final AnnonceRepository annonceRepository = notNull();
 		 final CategorieRepository categorieRepository=notNull();
 		 final MessageRepo messageRepo= notNull();

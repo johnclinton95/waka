@@ -21,7 +21,7 @@ public class Annonce {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "categorie_id")
 
-    @Column(nullable = false)
+   // @Column(nullable = false)
     private LocalDateTime datePublication;
 
     @Column(nullable = false)
